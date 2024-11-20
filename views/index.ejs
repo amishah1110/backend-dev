@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EJS</title>
+    <link rel="stylesheet" href="styles.css"> 
+    <!-- dont mention path in href for this particular case -->
+</head>
+<body>
+   <h1> This is a form</h1> <!--any form by default hits the GET route only!-->
+   <form action="/get-form-data" method="post">
+    <input 
+        type="text"
+        placeholder="Enter username"
+        name="username"
+    >
+    <input 
+        type="text"
+        placeholder="Enter email"
+        name="email"
+    >
+    <input 
+        type="password"
+        placeholder="Enter password"
+        name="password"
+    >
+    <button>Submit</button>
+   </form>
+
+   <script src="index.js"></script>
+</body>
+</html>
